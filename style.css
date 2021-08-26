@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(29, 28, 28);
+}
+.frame{
+    background: white;
+}
+.keyword{
+    color: rgb(23, 24, 68);
+}
+.text{
+    color: green;
+}
+#blank{
+    color: white;
+}
