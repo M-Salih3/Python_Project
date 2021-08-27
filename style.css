@@ -5,11 +5,17 @@ body{
     background: white;
 }
 .keyword{
-    color: rgb(23, 24, 68);
+    color: rgb(218, 133, 37);
 }
 .text{
     color: green;
 }
-#blank{
+.blank{
     color: white;
+}
+.function{
+    color: rgb(14, 27, 141);
+}
+.inbfunct{
+    color: rgb(126, 35, 201);
 }

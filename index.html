@@ -10,9 +10,35 @@
 <body>
     <div class="maindiv" >
         <div class="frame" >
-            <h1>hello</h1>
-            <span class="keyword" >print</span>(<span class="text" >"Hello World"</span>)
-            <p id="blank" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <h1>Python Project</h1>
+            <h2>Source code :</h2>
+            <span class="keyword" >import</span> mysql.connector <br>
+            <span class="keyword" >from </span>datetime <span class="keyword" >import </span>date <br> <br>
+            <span class="keyword" >def </span><span class="function" >clear</span>(): <br>
+            <span class="blank" >...</span><span class="keyword" >for </span>i <span class="keyword" >in </span><span class="inbfunct" >range</span>(65): <br>
+            <span class="blank" >......</span><span class="inbfunct">print</span>() <br> <br>
+            <span class="keyword">def</span>  <span class="function" >account_status</span>(acno): <br>
+            <span class="blank">...</span>conn = mysql.connector.connect( <br>
+            <span class="blank">......</span>host=<span class="text">'localhost'</span>database=<span class="text">'12_python_projet'</span>, user=<span class="text">'root'</span>, password=<span class="text">'password'</span>) <br>
+            <span class="blank">...</span>cursor = conn.cursor() <br>
+            <span class="blank">...</span>clear() <br>
+            <span class="blank">...</span>acno =<span class="inbfunct"> input</span>(<span class="text">'Enter account No : '</span>) <br>
+            <span class="blank">...</span>amount = <span class="inbfunct">input</span>(<span class="text">'Enter amount :'</span>) <br>
+            <span class="blank">...</span>today = datee.today() <br>
+            <span class="blank">...</span>result = account_status(acno) <br>
+            <span class="blank">...</span><span class="keyword">if </span>result [0] == <span class="text">'active'</span>: <br>
+            <span class="blank">......</span>sql1 =<span class="text">"update customer set balance = balance+"</span>+amount + <span class="text">'where acno = '</span>+acno+<span class="text">' and status="active";'</span> <br>
+            <span class="blank">......</span>sql2 = <span class="text">'insert into transaction(amount,type,acno,dot) values('</span> + amount + <span class="text">',"deposit",'</span> <br>
+            <span class="blank">......</span>cursor.execute(sql2) <br>
+            <span class="blank">......</span>cursor.execute(sql1) <br>
+            <span class="blank">......</span><span class="comment">#print(sql1)</span> <br>
+            <span class="blank">......</span><span class="comment">#print(sql2)</span> <br>
+            <span class="blank">......</span><span class="inbfunct">print</span>( <span class="text">'\n\namount deposited'</span>) <br> <br>
+            <span>...</span><span>else</span>: <br>
+            <span>......</span><span class="inbfunct">print</span>(<span class="text">'\n\nClosed or Suspended Account....'</span>) <br> <br>
+            <span>...</span>wait= <span class="inbfunct">input</span>(<span class="text">'\n\n\n Press any key to continue....'</span>) <br>
+            <span>...</span>conn.close() <br><br><br>
+            <p class="blank" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
 </body>
